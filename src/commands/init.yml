@@ -4,11 +4,11 @@ description: >
 executor: default
 
 parameters:
-  profile-url:
+  profile_url:
     type: string
     required: true
     description: "The Preevy profile URL"
 steps:
   - run:
       name: Init
-      command: preevy init --from <<parameters.profile-url>>
+      command: preevy init --from <<parameters.profile_url>>
