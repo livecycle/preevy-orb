@@ -1,0 +1,7 @@
+description: >
+  Install Livecycle node package
+
+steps:
+  - run:
+      name: Install Livecycle
+      command: npm i -g preevy

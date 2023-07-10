@@ -1,0 +1,18 @@
+description: >
+  Sample description
+# What will this job do?
+executor: default
+
+parameters:
+  args:
+    type: string
+    required: false
+    description: "Additional args to provide to the `up` command."
+  docker-compose-yaml-path:
+    type: string
+    required: false
+    description: "The path to the docker compose file. Uses current working directory if not provided."
+steps:
+  - run:
+      name: Up
+      command: preevy up ${compose_file_path:+-f ${compose_file_path}}

@@ -1,6 +1,5 @@
 description: >
   Sample description
-# What will this job do?
 
 executor: default
 
@@ -10,5 +9,7 @@ parameters:
     default: "World"
     description: "Hello to whom?"
 steps:
-  - greet:
-      to: << parameters.to >>
+  - install
+  - init
+  - checkout
+  - up
