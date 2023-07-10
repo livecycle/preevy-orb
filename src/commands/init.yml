@@ -1,14 +1,11 @@
 description: >
-  Sample description
-# What will this job do?
-executor: default
+  Initialized Preevy with a provided profile
 
 parameters:
   profile_url:
     type: string
-    required: true
     description: "The Preevy profile URL"
 steps:
   - run:
       name: Init
-      command: preevy init --from <<parameters.profile_url>>
+      command: preevy init --from << parameters.profile_url >>

@@ -1,14 +1,12 @@
 description: >
-  Sample description
-# What will this job do?
-executor: default
+  Runs the `preevy down` command
 
 parameters:
   args:
     type: string
     required: false
-    description: "Additional args to provide to the `up` command."
+    description: "Additional args to provide to the `down` command."
 steps:
   - run:
       name: Down
-      command: preevy down
+      command: preevy down << parameters.args >>
