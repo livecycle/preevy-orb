@@ -4,10 +4,9 @@ description: >
 executor: default
 
 parameters:
-  role_to_assume:
+  profile_url:
     type: string
-    default: "World"
-    description: "Hello to whom?"
+    description: "The Preevy profile URL"
 steps:
   - install
   - init
