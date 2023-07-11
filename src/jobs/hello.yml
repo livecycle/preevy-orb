@@ -10,6 +10,6 @@ parameters:
 steps:
   - install
   - init:
-    profile_url: << parameters.profile_url >>
+      profile_url: "<< parameters.profile_url >>"
   - checkout
   - up
