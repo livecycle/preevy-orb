@@ -14,5 +14,6 @@ steps:
   - run:
       name: Up
       environment:
-        COMPOSE_FILE_PATH: "<< parameters.docker_compose_yaml_path >>"
-      command: preevy up ${COMPOSE_FILE_PATH:+-f ${COMPOSE_FILE_PATH}} << parameters.args >>
+        COMPOSE_PATH: "<< parameters.docker_compose_yaml_path >>"
+        ARGS: "<< parameters.args >>"
+      command: preevy up ${COMPOSE_PATH:+-f ${COMPOSE_PATH}} $ARGS

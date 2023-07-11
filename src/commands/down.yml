@@ -3,8 +3,8 @@ description: >
 
 parameters:
   args:
-    required: false
     description: "Additional args to provide to the `down` command."
+    type: "string"
     default: ""
 steps:
   - run:
