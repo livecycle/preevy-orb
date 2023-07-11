@@ -3,9 +3,9 @@ description: >
 
 parameters:
   args:
-    type: string
     required: false
     description: "Additional args to provide to the `down` command."
+    default: ""
 steps:
   - run:
       name: Down

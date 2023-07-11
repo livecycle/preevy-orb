@@ -4,7 +4,7 @@ description: >
 executor: default
 
 parameters:
-  to:
+  role_to_assume:
     type: string
     default: "World"
     description: "Hello to whom?"

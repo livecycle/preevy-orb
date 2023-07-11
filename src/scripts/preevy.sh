@@ -1,8 +1,9 @@
+#!/bin/bash
 # Convert the docker-compose-yaml-path input to an env var
 compose_file_path=$COMPOSE_FILE_PATH
 
 # Run the up command
-preevy up ${compose_file_path:+-f ${compose_file_path}} $ARGS
+preevy up ${compose_file_path:+-f ${compose_file_path}} "$ARGS"
 
 # Fetch the generated preevy urls
 urls_json=$(preevy urls ${compose_file_path:+-f ${compose_file_path}} --json)

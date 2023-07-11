@@ -6,13 +6,13 @@ parameters:
     description: "Additional args to provide to the `up` command."
     type: string
     default: ""
-  docker-compose-yaml-path:
+  docker_compose_yaml_path:
     description: "The path to the docker compose file. Uses current working directory if not provided."
     type: string
     default: ""
 steps:
   - run:
       name: Up
-      command: >
-        compose_file_path=<< parameters.compose >>
-        preevy up ${compose_file_path:+-f ${compose_file_path}} << parameters.args >>
+      environment:
+        COMPOSE_FILE_PATH: "<< parameters.docker_compose_yaml_path >>"
+      command: preevy up ${COMPOSE_FILE_PATH:+-f ${COMPOSE_FILE_PATH}} << parameters.args >>
