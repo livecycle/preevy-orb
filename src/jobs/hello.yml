@@ -9,6 +9,7 @@ parameters:
     description: "The Preevy profile URL"
 steps:
   - install
-  - init
+  - init:
+    profile_url: << parameters.profile_url >>
   - checkout
   - up
