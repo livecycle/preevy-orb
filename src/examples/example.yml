@@ -1,13 +1,29 @@
 description: >
-  Sample example description.
-# Provide a use-case based example for using this orb.
-# Everything in the `usage` section will be displayed in the orb registry.
-# Comments are not retained.
+  This example shows how to deploy preview environment for every commit
+
 usage:
   version: 2.1
+
   orbs:
-    <orb-name>: <namespace>/<orb-name>@1.2.3
+    preevy: livecycle/preevy@0.0.1
+    aws-cli: circleci/aws-cli@3.1.5
+
+  jobs:
+    deploy_preview:
+      environment:
+          AWS_REGION: eu-west-1
+      executor: preevy/default
+      steps:
+        - preevy/install
+        - aws-cli/setup:
+            role-arn: "arn:aws:iam::12345678:role/circleci"
+            aws-region: AWS_REGION
+        - preevy/init:
+            profile_url: "s3://preevy-12345678?region=eu-west-1"
+        - checkout
+        - preevy/up:
+            docker_compose_yaml_path: "./production/docker-compose.yaml"
   workflows:
-    use-my-orb:
+    deploy_preview:
       jobs:
-        - <orb-name>/<job-name>
+        - deploy_preview
