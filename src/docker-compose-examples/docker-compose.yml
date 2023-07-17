@@ -1,0 +1,35 @@
+version: '3.3'
+
+services:
+  wordpress-db:
+    image: mariadb:10.11
+    container_name: wordpress-db
+    hostname: wordpress-db
+    command: '--default-authentication-plugin=mysql_native_password'
+    #networks:
+    #  - proxy
+    volumes:
+      - ${DOCKER_VOLUME_STORAGE:-/mnt/docker-volumes}/wordpress/mysql:/var/lib/mysql
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD=wordpressroot
+      - MYSQL_DATABASE=wordpress
+      - MYSQL_USER=wordpress
+      - MYSQL_PASSWORD=wordpress
+  
+  wordpress:
+    image: wordpress:latest
+    container_name: wordpress
+    hostname: wordpress
+    volumes:
+      - ${DOCKER_VOLUME_STORAGE:-/mnt/docker-volumes}/wordpress/data:/var/www/html
+    ports:
+      - 80:80
+    #networks:
+    #  - proxy      
+    restart: unless-stopped
+    environment:
+      - WORDPRESS_DB_HOST=wordpress-db
+      - WORDPRESS_DB_USER=wordpress
+      - WORDPRESS_DB_PASSWORD=wordpress
+      - WORDPRESS_DB_NAME=wordpress
