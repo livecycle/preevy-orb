@@ -1,4 +1,4 @@
-# Preevy Orb [![CircleCI Build Status](https://circleci.com/gh/livecycle/preevy.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/livecycle/preevy) [![CircleCI Orb Version](https://badges.circleci.com/orbs/livecycle/preevy.svg)](https://circleci.com/developer/orbs/orb/livecycle/preevy) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/livecycle/preevy/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
+# Preevy Orb [![CircleCI Build Status](https://circleci.com/gh/livecycle/preevy-orb.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/livecycle/preevy-orb) [![CircleCI Orb Version](https://badges.circleci.com/orbs/livecycle/preevy.svg)](https://circleci.com/developer/orbs/orb/livecycle/preevy) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/livecycle/preevy/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 
 
 Run Preevy from CircleCI 🤘
@@ -12,6 +12,7 @@ Preevy is a powerful CLI tool designed to simplify the process of creating ephem
 Using Preevy, you can easily provision any Docker-Compose application on affordable [AWS](https://preevy.dev/drivers/aws-lightsail), [GCP](https://preevy.dev/drivers/gcp-gce), [Azure](https://azure.microsoft.com/en-us) or [k8s](https://preevy.dev/drivers/kube-pod) VMs.
 
 Visit The full documentation here: https://preevy.dev/
+
 
 
 ## Resources
