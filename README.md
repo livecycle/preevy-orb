@@ -1,15 +1,10 @@
-# Preevy Orb
+# Preevy Orb [![CircleCI Build Status](https://circleci.com/gh/livecycle/preevy.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/livecycle/preevy) [![CircleCI Orb Version](https://badges.circleci.com/orbs/livecycle/preevy.svg)](https://circleci.com/developer/orbs/orb/livecycle/preevy) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/livecycle/preevy/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
 
-<!---
-[![CircleCI Build Status](https://circleci.com/gh/livecycle/preevy.svg?style=shield "CircleCI Build Status")](https://circleci.com/gh/livecycle/preevy) [![CircleCI Orb Version](https://badges.circleci.com/orbs/livecycle/preevy.svg)](https://circleci.com/developer/orbs/orb/livecycle/preevy) [![GitHub License](https://img.shields.io/badge/license-MIT-lightgrey.svg)](https://raw.githubusercontent.com/livecycle/preevy/master/LICENSE) [![CircleCI Community](https://img.shields.io/badge/community-CircleCI%20Discuss-343434.svg)](https://discuss.circleci.com/c/ecosystem/orbs)
-
---->
 
 Run Preevy from CircleCI 🤘
 
 [What are orbs?](https://circleci.com/orbs/)
 
----
 
 ## About Preevy
 
@@ -18,7 +13,6 @@ Using Preevy, you can easily provision any Docker-Compose application on afforda
 
 Visit The full documentation here: https://preevy.dev/
 
----
 
 ## Resources
 
