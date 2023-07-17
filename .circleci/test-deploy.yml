@@ -38,7 +38,7 @@ jobs:
           profile_url: "s3://preevy-297324796627-test3?region=eu-west-1"
       - checkout
       - preevy/up:
-          docker_compose_yaml_path: "./docker-compose-examples/docker-compose.yaml"
+          docker_compose_yaml_path: "./docker-compose-examples/docker-compose.yml"
 
 workflows:
   test-deploy:
