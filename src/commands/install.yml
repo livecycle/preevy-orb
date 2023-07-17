@@ -4,4 +4,4 @@ description: >
 steps:
   - run:
       name: Install Livecycle
-      command: npm i -g preevy
+      command: sudo npm i -g preevy
