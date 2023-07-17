@@ -30,7 +30,7 @@ We welcome [issues](https://github.com/livecycle/preevy-orb/issues) to and [pull
     - For the best experience, squash-and-merge and use [Conventional Commit Messages](https://conventionalcommits.org/).
 2. Find the current version of the orb.
     - You can run `circleci orb info livecycle/preevy | grep "Latest"` to see the current version.
-3. Create a [new Release](https://github.com/preevy-orb/preevy/releases/new) on GitHub.
+3. Create a [new Release](https://github.com/livecycle/preevy-orb/releases/new) on GitHub.
     - Click "Choose a tag" and _create_ a new [semantically versioned](http://semver.org/) tag. (ex: v1.0.0)
       - We will have an opportunity to change this before we publish if needed after the next step.
 4.  Click _"+ Auto-generate release notes"_.
