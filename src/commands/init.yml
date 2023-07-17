@@ -1,5 +1,5 @@
 description: >
-  Initialized Preevy with a provided profile
+  Initialize Preevy with a provided profile
 
 parameters:
   profile_url:
