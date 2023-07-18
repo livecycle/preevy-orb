@@ -4,9 +4,8 @@ orbs:
   # Reference your orb's jobs and commands below as they will exist when built.
   orb-tools: circleci/orb-tools@12.0
   # The orb definition is intentionally not included here. It will be injected into the pipeline.
-  preevy: livecycle/preevy@0.0.5
+  preevy: {}
   aws-cli: circleci/aws-cli@3.1.5
-
 
 # Use this tag to ensure test jobs always run,
 # even though the downstream publish job will only run on release tags.
