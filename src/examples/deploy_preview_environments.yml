@@ -1,5 +1,5 @@
 description: >
-  This example shows how to deploy preview environment for every commit
+  Use preevy/up to deploy a multi-services preview environment that updates on every commit in the branch and exposes an HTTPS url for every service.
 
 usage:
   version: 2.1
@@ -11,8 +11,9 @@ usage:
   jobs:
     deploy_preview:
       environment:
-          AWS_REGION: eu-west-1
-      executor: preevy/default
+        AWS_REGION: eu-west-1
+      docker:
+        - image: cimg/node:lts
       steps:
         - preevy/install
         - aws-cli/setup:

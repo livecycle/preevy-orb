@@ -4,8 +4,6 @@ description: >
   Preevy is a powerful CLI tool designed to simplify the process of creating ephemeral preview environments.
   Using Preevy, you can easily provision any Docker-Compose application on AWS, Google Cloud, Azure or Kubernetes using affordable computing resources.
 
-  Visit The full documentation here: https://preevy.dev/
-
 display:
   home_url: "https://preevy.dev/"
   source_url: "https://github.com/livecycle/preevy-orb"

@@ -39,6 +39,8 @@ jobs:
       - checkout
       - preevy/up:
           docker_compose_yaml_path: "./docker-compose-examples/docker-compose.yml"
+      - preevy/down:
+          args: "-f ./docker-compose-examples/docker-compose.yml"
 
 workflows:
   test-deploy:
